@@ -1,0 +1,50 @@
+.submit {
+  font-weight: bold;
+}
+.paymentCardBody {
+  padding: 0;
+}
+.formSubmit .labelName .am-input-label-5,
+.formSubmit .labelName input {
+  font-size: 14px;
+}
+[data-dpr="2"] .formSubmit .labelName .am-input-label-5,
+[data-dpr="2"] .formSubmit .labelName input {
+  font-size: 28px;
+}
+[data-dpr="2.5"] .formSubmit .labelName .am-input-label-5,
+[data-dpr="2.5"] .formSubmit .labelName input {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .formSubmit .labelName .am-input-label-5,
+[data-dpr="2.75"] .formSubmit .labelName input {
+  font-size: 39px;
+}
+[data-dpr="3"] .formSubmit .labelName .am-input-label-5,
+[data-dpr="3"] .formSubmit .labelName input {
+  font-size: 42px;
+}
+[data-dpr="4"] .formSubmit .labelName .am-input-label-5,
+[data-dpr="4"] .formSubmit .labelName input {
+  font-size: 56px;
+}
+.paymentTitle .am-list-extra {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333 !important;
+}
+[data-dpr="2"] .paymentTitle .am-list-extra {
+  font-size: 32px;
+}
+[data-dpr="2.5"] .paymentTitle .am-list-extra {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .paymentTitle .am-list-extra {
+  font-size: 44px;
+}
+[data-dpr="3"] .paymentTitle .am-list-extra {
+  font-size: 48px;
+}
+[data-dpr="4"] .paymentTitle .am-list-extra {
+  font-size: 64px;
+}

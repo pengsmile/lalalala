@@ -1,0 +1,16 @@
+[
+    {
+      "key":"view",
+      "name":"",
+      "abbr":"index",
+      "before_render":[],
+      "output":{
+          "content_type": "html", 
+          "redirect_url": "",
+          "html": "~/Template/marketingSales/DentistryCollectFees/DentistryCollectFees.html",
+          "root": "",
+          "has_cache": false,
+          "has_validate": false,
+          "output_keys": [ ]
+      }
+  }]

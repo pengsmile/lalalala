@@ -1,0 +1,132 @@
+
+  @import '../PublicBase';
+
+  .container {
+      height: 100vh;
+      background: #4e9962;
+    //   .px2rem(padding, 15);
+      padding-top: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+  }
+  .ScanBox {
+      // background: white;
+      .px2rem(margin-top, 10);
+      border-radius: 30px;
+      background: none;
+      box-shadow: 0px 2px 12px -4px #999;
+      .px2rem(padding, 18);
+
+      
+  }
+  // .content {
+      
+  //     height: 400px;
+  // }
+  .delete {
+      color: #ff4d4f;
+  }
+  .content {
+      overflow: auto;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding-bottom: 10px;
+  }
+  .header {
+        .px2rem(margin-bottom, 15);
+        .px2rem(padding, 15);
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 6px 12px -4px #999;
+        .font-size(28);
+      
+  }
+  .title em{
+      .font-size(28) !important
+  }
+  .head {
+    display: flex;
+    background: #eee !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+    .input {
+        flex-grow: 1;
+        flex-basis: 0;
+        background: white;
+        border-radius: 5px;
+        input {
+            padding: 4px 5px;
+            box-sizing: content-box;
+
+        }
+    }
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #09bb07;
+        margin-left: 5px;
+    }
+    }
+  .item {
+        .font-size(28);
+        .px2rem(margin-top, 15);
+        border-radius: 15px;
+        box-shadow: 0px 6px 12px -4px #999;
+        .px2rem(padding, 8);
+        em {
+            font-style: inherit;
+        }
+  }
+  .item:first-child {
+      margin-top: 0;
+  }
+
+  .demoTitle:before,
+.demoTitle:after {
+  border-bottom: none;
+}
+.Title {
+    color: white;
+}
+.cardTitle  {
+    .paddind(50, 20);
+    .am-card-header-content {
+        justify-content: center;
+        color: #4e9962;
+        .font-size(28)
+    }
+    
+}
+.showMore {
+    .px2rem(padding-top, 20);
+    .am-list-body {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+.NextStep {
+    .px2rem(margin-top, 20);
+    color: #4e9962;
+}
+.cardBody {
+    .paddind(70, 30);
+}
+.cardBodyTitle {
+    padding-left: 15px;
+}
+.InputMoney {
+    .am-input-label-5 {
+        width: auto !important;
+        .font-size(48);
+        font-weight: bold;
+    }
+    .fake-input {
+        .font-size(52) !important;
+        font-weight: bold;
+    }
+}
+  
+  
+  

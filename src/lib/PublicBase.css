@@ -1,0 +1,803 @@
+/* 禁止选中文本 */
+
+.usn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+/* 浮动 */
+
+
+/* .fl { float: left; }
+.fr { float: right; } */
+
+
+/* .cf { zoom: 1; }
+.cf:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+    overflow:hidden;
+} */
+
+
+/* 元素类型 */
+
+.db {
+    display: block;
+}
+
+.dn {
+    display: none;
+}
+
+.di {
+    display: inline
+}
+
+.dib {
+    display: inline-block;
+}
+
+.transparent {
+    opacity: 0
+}
+
+
+/*文字排版、颜色*/
+
+.f12 {
+    font-size: 12px
+}
+
+.f14 {
+    font-size: 14px
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.f18 {
+    font-size: 18px
+}
+
+.f20 {
+    font-size: 20px
+}
+
+.fb {
+    font-weight: bold
+}
+
+.fn {
+    font-weight: normal
+}
+
+.t2 {
+    text-indent: 2em
+}
+
+.red,
+a.red {
+    color: #cc0031
+}
+
+.darkblue,
+a.darkblue {
+    color: #039
+}
+
+.gray,
+a.gray {
+    color: #878787
+}
+
+.lh150 {
+    line-height: 150%
+}
+
+.lh180 {
+    line-height: 180%
+}
+
+.lh200 {
+    line-height: 200%
+}
+
+.unl {
+    text-decoration: underline;
+}
+
+.no_unl {
+    text-decoration: none;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tj {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.wn {
+    /* 强制不换行 */
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.wb {
+    /* 强制换行 */
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.wp {
+    /* 保持空白序列*/
+    overflow: hidden;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.wes {
+    /* 多出部分用省略号表示 , 用于一行 */
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wes-2 {
+    /* 适用于webkit内核和移动端 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.wes-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.wes-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+
+/* 溢出样式 */
+
+.ofh {
+    overflow: hidden;
+}
+
+.ofs {
+    overflow: scroll;
+}
+
+.ofa {
+    overflow: auto;
+}
+
+.ofv {
+    overflow: visible;
+}
+
+
+/* 定位方式 */
+
+.ps {
+    position: static;
+}
+
+.pr {
+    position: relative;
+    zoom: 1;
+}
+
+.pa {
+    position: absolute;
+}
+
+.pf {
+    position: fixed;
+}
+
+
+/* 垂直对齐方式 */
+
+.vt {
+    vertical-align: top;
+}
+
+.vm {
+    vertical-align: middle;
+}
+
+.vb {
+    vertical-align: bottom;
+}
+
+
+/* 鼠标样式 */
+
+.csd {
+    cursor: default;
+}
+
+.csp {
+    cursor: pointer;
+}
+
+.csh {
+    cursor: help;
+}
+
+.csm {
+    cursor: move;
+}
+
+
+/* flex布局 */
+
+.df-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.df-sa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* 垂直居中 */
+
+.df-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tb-c {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ts-c {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ts-mc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+/* 辅助 */
+
+.mask-fixed-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 999;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-cover-all {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* ------------- 自定义CSS属性 START -------------------*/
+
+.sm-fl {
+    float: left;
+}
+
+.sm-fr {
+    float: right;
+}
+
+.sm-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm-vertical-align-middle {
+    vertical-align: middle;
+}
+
+.sm-vertical-align-top {
+    vertical-align: top;
+}
+
+.sm-hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+/* =========外边距 ============*/
+
+.sm-margin-0 {
+    margin: 0 !important;
+}
+
+.sm-margin {
+    margin: 16px;
+}
+
+.sm-margin-xs {
+    margin: 5px;
+}
+
+.sm-margin-sm {
+    margin: 10px;
+}
+
+.sm-margin-lg {
+    margin: 24px;
+}
+
+.sm-margin-xl {
+    margin: 32px;
+}
+
+
+/* =========上外边距 ============*/
+
+.sm-margin-top-0 {
+    margin-top: 0 !important;
+}
+
+.sm-margin-top {
+    margin-top: 16px;
+}
+
+.sm-margin-top-xs {
+    margin-top: 5px;
+}
+
+.sm-margin-top-sm {
+    margin-top: 10px;
+}
+
+.sm-margin-top-lg {
+    margin-top: 24px;
+}
+
+.sm-margin-top-xl {
+    margin-top: 32px;
+}
+
+
+/* =========右外边距 ============*/
+
+.sm-margin-right {
+    margin-right: 16px;
+}
+
+.sm-margin-right-xs {
+    margin-right: 5px;
+}
+
+.sm-margin-right-sm {
+    margin-right: 10px;
+}
+
+.sm-margin-right-lg {
+    margin-right: 24px;
+}
+
+.sm-margin-right-xl {
+    margin-right: 32px;
+}
+
+
+/* =========下外边距 ============*/
+
+.sm-margin-bottom {
+    margin-bottom: 16px;
+}
+
+.sm-margin-bottom-xs {
+    margin-bottom: 5px;
+}
+
+.sm-margin-bottom-sm {
+    margin-bottom: 10px;
+}
+
+.sm-margin-bottom-lg {
+    margin-bottom: 24px;
+}
+
+.sm-margin-bottom-xl {
+    margin-bottom: 32px;
+}
+
+
+/* =========左外边距 ============*/
+
+.sm-margin-left {
+    margin-left: 16px;
+}
+
+.sm-margin-left-xs {
+    margin-left: 5px;
+}
+
+.sm-margin-left-sm {
+    margin-left: 10px;
+}
+
+.sm-margin-left-lg {
+    margin-left: 24px;
+}
+
+.sm-margin-left-xl {
+    margin-left: 32px;
+}
+
+
+/* ----------左右外边距 -------------*/
+
+.sm-margin-horizontal {
+    margin: 0 16px;
+}
+
+.sm-margin-horizontal-xs {
+    margin: 0 5px;
+}
+
+.sm-margin-horizontal-sm {
+    margin: 0 10px;
+}
+
+.sm-margin-horizontal-lg {
+    margin: 0 24px;
+}
+
+.sm-margin-horizontal-xl {
+    margin: 0 32px;
+}
+
+
+/* ============上下外边距============*/
+
+.sm-margin-vertical {
+    margin: 16px 0;
+}
+
+.sm-margin-vertical-xs {
+    margin: 5px 0;
+}
+
+.sm-margin-vertical-sm {
+    margin: 10px 0;
+}
+
+.sm-margin-vertical-lg {
+    margin: 24px 0;
+}
+
+.sm-margin-vertical-xl {
+    margin: 32px 0;
+}
+
+
+/* ------------内边距---------------*/
+
+.sm-padding {
+    padding: 16px;
+}
+.sm-padding-0 {
+    padding: 0 !important;
+}
+.sm-padding-xs {
+    padding: 5px;
+}
+
+.sm-padding-sm {
+    padding: 10px;
+}
+
+.sm-padding-lg {
+    padding: 24px;
+}
+
+.sm-padding-xl {
+    padding: 32px;
+}
+
+
+/* ------------上内边距---------------*/
+
+.sm-padding-top-0 {
+    padding-top: 0 !important;
+}
+
+.sm-padding-top {
+    padding-top: 16px;
+}
+
+.sm-padding-top-xs {
+    padding-top: 5px;
+}
+
+.sm-padding-top-sm {
+    padding-top: 10px;
+}
+
+.sm-padding-top-lg {
+    padding-top: 24px;
+}
+
+.sm-padding-top-xl {
+    padding-top: 32px;
+}
+
+
+/* ------------右内边距---------------*/
+
+.sm-padding-right {
+    padding-right: 16px;
+}
+
+.sm-padding-right-xs {
+    padding-right: 5px;
+}
+
+.sm-padding-right-sm {
+    padding-right: 10px;
+}
+
+.sm-padding-right-lg {
+    padding-right: 24px;
+}
+
+.sm-padding-right-xl {
+    padding-right: 32px;
+}
+
+
+/* ------------下内边距---------------*/
+
+.sm-padding-bottom {
+    padding-bottom: 16px;
+}
+
+.sm-padding-bottom-xs {
+    padding-bottom: 5px;
+}
+
+.sm-padding-bottom-sm {
+    padding-bottom: 10px;
+}
+
+.sm-padding-bottom-lg {
+    padding-bottom: 24px;
+}
+
+.sm-padding-bottom-xl {
+    padding-bottom: 32px;
+}
+
+
+/* ------------左内边距---------------*/
+
+.sm-padding-left {
+    padding-left: 16px;
+}
+
+.sm-padding-left-xs {
+    padding-left: 5px;
+}
+
+.sm-padding-left-sm {
+    padding-left: 10px;
+}
+
+.sm-padding-left-lg {
+    padding-left: 24px;
+}
+
+.sm-padding-left-xl {
+    padding-left: 32px;
+}
+
+
+/* ============上下内边距============*/
+
+.sm-padding-vertical {
+    padding: 16px 0;
+}
+
+.sm-padding-vertical-xs {
+    padding: 5px 0;
+}
+
+.sm-padding-vertical-sm {
+    padding: 10px 0;
+}
+
+.sm-padding-vertical-lg {
+    padding: 24px 0;
+}
+
+.sm-padding-vertical-xl {
+    padding: 32px 0;
+}
+
+
+/* ----------左右内边距 -------------*/
+
+.sm-padding-horizontal {
+    padding: 0 16px;
+}
+
+.sm-padding-horizontal-xs {
+    padding: 0 5px;
+}
+
+.sm-padding-horizontal-sm {
+    padding: 0 10px;
+}
+
+.sm-padding-horizontal-lg {
+    padding: 0 24px;
+}
+
+.sm-padding-horizontal-xl {
+    padding: 0 32px;
+}
+
+.sm-text-truncate {
+    word-wrap: normal;
+    /* for IE */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sm-text-left {
+    text-align: left !important;
+}
+
+.sm-text-center {
+    text-align: center !important;
+}
+
+.sm-text-right {
+    text-align: right;
+}
+
+
+/* ---------- 字体大小 ----------*/
+
+.sm-text-xs {
+    font-size: 12px;
+}
+
+.sm-text-sm {
+    font-size: 14px;
+}
+
+.sm-text {
+    font-size: 16px;
+}
+
+.sm-text-lg {
+    font-size: 18px;
+}
+
+.sm-show {
+    display: block !important;
+}
+
+.sm-auto {
+    margin: 0 auto;
+}
+
+.sm-inling-block {
+    display: inline-block !important;
+}
+
+.sm-block {
+    display: block !important;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+.sm-red {
+    color: #FF0000;
+}
+
+.sm-gray {
+    color: #f8f8f8;
+}
+
+sm-widthmax {
+    width: 100%
+}
+
+.sm-bold {
+    font-weight: bold
+}
+
+.sm-def-size {
+    font-size: 12px;
+}
+
+.sm-visibility-hidd {
+    visibility: hidden
+}
+
+.selected .icon {
+    visibility: visible;
+}
+
+
+/* ------------- 自定义CSS属性 END -------------------*/

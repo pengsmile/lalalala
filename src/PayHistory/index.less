@@ -1,0 +1,61 @@
+
+@import '../PublicBase.less';
+
+.payHistoryItem {
+    margin: 10px;
+    border-radius: 10px !important;
+    box-shadow: 0px 6px 12px -4px #999;
+    .am-card-body {
+        padding: 0;
+    }
+}
+.footer {
+    padding-bottom: 15px;
+}
+.PayHistoryContent {
+    overflow: hidden;
+}
+.wingblacnk {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.payHistoryCard {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+}
+.paymentHistoryCardBody {
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+    padding: 0;
+}
+.ListView > .am-list {
+    width: 100%;
+}
+.preBody {
+    .paddind(30, 30);
+    font-size: .9em;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+    .preItem {
+        overflow: hidden;
+    }
+    .preLabel {
+        float: left;
+        margin-right: 1em;
+        min-width: 4em;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: justify;
+        text-align-last: justify;
+    }
+    .preValue {
+        display: block;
+        overflow: hidden;
+        word-break: normal;
+        word-wrap: break-word;
+    }
+}
